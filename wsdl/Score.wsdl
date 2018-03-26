@@ -191,7 +191,6 @@
                   binding="tns:stuScoreBinding">
             <soap:address location="http://www.nju.edu.cn:8080/Score"/>
         </port>
-
     </service>
 
 </definitions>

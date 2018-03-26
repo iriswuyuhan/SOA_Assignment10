@@ -13,7 +13,7 @@
     <complexType name="AuthFaultType">
         <sequence>
             <element name="Reason" type="string"/>
-            <element name="Id" type="tns:账号类型"/>
+            <element name="Id" type="nju:账号类型"/>
         </sequence>
     </complexType>
 
