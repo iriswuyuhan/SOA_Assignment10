@@ -26,7 +26,8 @@
     <xsd:import
 			namespace="http://jw.nju.edu.cn/schema"
 			schemaLocation="xsd/Student.xsd" />
-			
+
+      
 	<xsd:import
 			namespace="http://jw.nju.edu.cn/schema"
 			schemaLocation="xsd/StuInfoFault.xsd" />
