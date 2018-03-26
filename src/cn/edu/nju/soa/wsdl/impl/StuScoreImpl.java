@@ -52,6 +52,8 @@ public class StuScoreImpl implements StuScoreInterface {
 
     }
 
+<<<<<<< HEAD
+=======
     private void conversion(CourseScoreList courseScoreList) {
 
         String id = courseScoreList.getCourseScore().get(0).getScore().get(0).getSchoolNum();
@@ -110,4 +112,5 @@ public class StuScoreImpl implements StuScoreInterface {
         StuScoreImpl s = new StuScoreImpl();
         s.conversion(courseScoreList);
     }
+>>>>>>> 13154472491b27c6c922bec29976ab88566c6bb7
 }
