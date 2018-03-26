@@ -9,20 +9,20 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>²¿ÃÅĞÅÏ¢ÀàĞÍ complex typeµÄ Java Àà¡£
+ * <p>éƒ¨é—¨ä¿¡æ¯ç±»å‹ complex typeçš„ Java ç±»ã€‚
  * 
- * <p>ÒÔÏÂÄ£Ê½Æ¬¶ÎÖ¸¶¨°üº¬ÔÚ´ËÀàÖĞµÄÔ¤ÆÚÄÚÈİ¡£
+ * <p>ä»¥ä¸‹æ¨¡å¼ç‰‡æ®µæŒ‡å®šåŒ…å«åœ¨æ­¤ç±»ä¸­çš„é¢„æœŸå†…å®¹ã€‚
  * 
  * <pre>
- * &lt;complexType name="²¿ÃÅĞÅÏ¢ÀàĞÍ"&gt;
+ * &lt;complexType name="éƒ¨é—¨ä¿¡æ¯ç±»å‹"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="²¿ÃÅ±àºÅ" type="{http://www.nju.edu.cn/schema}²¿ÃÅ±àºÅÀàĞÍ"/&gt;
- *         &lt;element name="²¿ÃÅÃû³Æ" type="{http://www.nju.edu.cn/schema}²¿ÃÅÃû³ÆÀàĞÍ"/&gt;
- *         &lt;element name="²¿ÃÅµç»°" type="{http://www.nju.edu.cn/schema}°ì¹«ÊÒµç»°ÀàĞÍ"/&gt;
- *         &lt;element name="Ğ£Çø" type="{http://www.nju.edu.cn/schema}Ğ£ÇøÀàĞÍ"/&gt;
- *         &lt;element name="²¿ÃÅµØÖ·" type="{http://www.nju.edu.cn/schema}µØÖ·ÀàĞÍ"/&gt;
+ *         &lt;element name="éƒ¨é—¨ç¼–å·" type="{http://www.nju.edu.cn/schema}éƒ¨é—¨ç¼–å·ç±»å‹"/&gt;
+ *         &lt;element name="éƒ¨é—¨åç§°" type="{http://www.nju.edu.cn/schema}éƒ¨é—¨åç§°ç±»å‹"/&gt;
+ *         &lt;element name="éƒ¨é—¨ç”µè¯" type="{http://www.nju.edu.cn/schema}åŠå…¬å®¤ç”µè¯ç±»å‹"/&gt;
+ *         &lt;element name="æ ¡åŒº" type="{http://www.nju.edu.cn/schema}æ ¡åŒºç±»å‹"/&gt;
+ *         &lt;element name="éƒ¨é—¨åœ°å€" type="{http://www.nju.edu.cn/schema}åœ°å€ç±»å‹"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -39,138 +39,138 @@ import javax.xml.bind.annotation.XmlType;
     "\u6821\u533a",
     "\u90e8\u95e8\u5730\u5740"
 })
-public class ²¿ÃÅĞÅÏ¢ÀàĞÍ {
+public class éƒ¨é—¨ä¿¡æ¯ç±»å‹ {
 
     @XmlElement(required = true)
-    protected String ²¿ÃÅ±àºÅ;
+    protected String éƒ¨é—¨ç¼–å·;
     @XmlElement(required = true)
-    protected String ²¿ÃÅÃû³Æ;
+    protected String éƒ¨é—¨åç§°;
     @XmlElement(required = true)
-    protected String ²¿ÃÅµç»°;
+    protected String éƒ¨é—¨ç”µè¯;
     @XmlElement(required = true)
     @XmlSchemaType(name = "string")
-    protected Ğ£ÇøÀàĞÍ Ğ£Çø;
+    protected æ ¡åŒºç±»å‹ æ ¡åŒº;
     @XmlElement(required = true)
-    protected String ²¿ÃÅµØÖ·;
+    protected String éƒ¨é—¨åœ°å€;
 
     /**
-     * »ñÈ¡²¿ÃÅ±àºÅÊôĞÔµÄÖµ¡£
+     * è·å–éƒ¨é—¨ç¼–å·å±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String get²¿ÃÅ±àºÅ() {
-        return ²¿ÃÅ±àºÅ;
+    public String getéƒ¨é—¨ç¼–å·() {
+        return éƒ¨é—¨ç¼–å·;
     }
 
     /**
-     * ÉèÖÃ²¿ÃÅ±àºÅÊôĞÔµÄÖµ¡£
+     * è®¾ç½®éƒ¨é—¨ç¼–å·å±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void set²¿ÃÅ±àºÅ(String value) {
-        this.²¿ÃÅ±àºÅ = value;
+    public void setéƒ¨é—¨ç¼–å·(String value) {
+        this.éƒ¨é—¨ç¼–å· = value;
     }
 
     /**
-     * »ñÈ¡²¿ÃÅÃû³ÆÊôĞÔµÄÖµ¡£
+     * è·å–éƒ¨é—¨åç§°å±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String get²¿ÃÅÃû³Æ() {
-        return ²¿ÃÅÃû³Æ;
+    public String getéƒ¨é—¨åç§°() {
+        return éƒ¨é—¨åç§°;
     }
 
     /**
-     * ÉèÖÃ²¿ÃÅÃû³ÆÊôĞÔµÄÖµ¡£
+     * è®¾ç½®éƒ¨é—¨åç§°å±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void set²¿ÃÅÃû³Æ(String value) {
-        this.²¿ÃÅÃû³Æ = value;
+    public void setéƒ¨é—¨åç§°(String value) {
+        this.éƒ¨é—¨åç§° = value;
     }
 
     /**
-     * »ñÈ¡²¿ÃÅµç»°ÊôĞÔµÄÖµ¡£
+     * è·å–éƒ¨é—¨ç”µè¯å±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String get²¿ÃÅµç»°() {
-        return ²¿ÃÅµç»°;
+    public String getéƒ¨é—¨ç”µè¯() {
+        return éƒ¨é—¨ç”µè¯;
     }
 
     /**
-     * ÉèÖÃ²¿ÃÅµç»°ÊôĞÔµÄÖµ¡£
+     * è®¾ç½®éƒ¨é—¨ç”µè¯å±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void set²¿ÃÅµç»°(String value) {
-        this.²¿ÃÅµç»° = value;
+    public void setéƒ¨é—¨ç”µè¯(String value) {
+        this.éƒ¨é—¨ç”µè¯ = value;
     }
 
     /**
-     * »ñÈ¡Ğ£ÇøÊôĞÔµÄÖµ¡£
+     * è·å–æ ¡åŒºå±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
-     *     {@link Ğ£ÇøÀàĞÍ }
+     *     {@link æ ¡åŒºç±»å‹ }
      *     
      */
-    public Ğ£ÇøÀàĞÍ getĞ£Çø() {
-        return Ğ£Çø;
+    public æ ¡åŒºç±»å‹ getæ ¡åŒº() {
+        return æ ¡åŒº;
     }
 
     /**
-     * ÉèÖÃĞ£ÇøÊôĞÔµÄÖµ¡£
+     * è®¾ç½®æ ¡åŒºå±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
-     *     {@link Ğ£ÇøÀàĞÍ }
+     *     {@link æ ¡åŒºç±»å‹ }
      *     
      */
-    public void setĞ£Çø(Ğ£ÇøÀàĞÍ value) {
-        this.Ğ£Çø = value;
+    public void setæ ¡åŒº(æ ¡åŒºç±»å‹ value) {
+        this.æ ¡åŒº = value;
     }
 
     /**
-     * »ñÈ¡²¿ÃÅµØÖ·ÊôĞÔµÄÖµ¡£
+     * è·å–éƒ¨é—¨åœ°å€å±æ€§çš„å€¼ã€‚
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String get²¿ÃÅµØÖ·() {
-        return ²¿ÃÅµØÖ·;
+    public String getéƒ¨é—¨åœ°å€() {
+        return éƒ¨é—¨åœ°å€;
     }
 
     /**
-     * ÉèÖÃ²¿ÃÅµØÖ·ÊôĞÔµÄÖµ¡£
+     * è®¾ç½®éƒ¨é—¨åœ°å€å±æ€§çš„å€¼ã€‚
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void set²¿ÃÅµØÖ·(String value) {
-        this.²¿ÃÅµØÖ· = value;
+    public void setéƒ¨é—¨åœ°å€(String value) {
+        this.éƒ¨é—¨åœ°å€ = value;
     }
 
 }
