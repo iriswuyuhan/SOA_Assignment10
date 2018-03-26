@@ -18,18 +18,18 @@ public class StuScoreImpl implements StuScoreInterface {
     private static Map<String, String> map = new HashMap<>();
 
     static {
-        map.put("151250052", "何林洋");
-        map.put("151250036", "冯超");
-        map.put("151250098", "刘伟");
-        map.put("151250162", "吴宇涵");
-        map.put("151250127", "孙皓");
-        map.put("151250191", "张皓月");
-        map.put("151250007", "曹利航");
-        map.put("151250214", "朱应山");
-        map.put("151250183", "杨文韬");
-        map.put("151250134", "田原");
-        map.put("151250170", "辛志庭");
-        map.put("151250013", "陈进");
+        map.put("151250052", "何林洋.txt");
+        map.put("151250036", "冯超.txt");
+        map.put("151250098", "刘伟.txt");
+        map.put("151250162", "吴宇涵.txt");
+        map.put("151250127", "孙皓.txt");
+        map.put("151250191", "张皓月.txt");
+        map.put("151250007", "曹利航.txt");
+        map.put("151250214", "朱应山.txt");
+        map.put("151250183", "杨文韬.txt");
+        map.put("151250134", "田原.txt");
+        map.put("151250170", "辛志庭.txt");
+        map.put("151250013", "陈进.txt");
     }
 
     @Override
@@ -104,7 +104,6 @@ public class StuScoreImpl implements StuScoreInterface {
         scoreType.setSchoolNum("12");
         scoreType.setScore(99);
         scoreTypes.add(scoreType);
-
         courseScore.setScore(scoreTypes);
         courseScores.add(courseScore);
         courseScoreList.setCourseScore(courseScores);
