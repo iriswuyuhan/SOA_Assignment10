@@ -12,8 +12,6 @@
 
     <documentation>成绩管理系统服务定义</documentation>
 
-    <import namespace="http://jw.nju.edu.cn/fault/wsdl" location="scoreFault.wsdl"/>
-
     <types>
         <xsd:schema targetNamespace="http://jw.nju.edu.cn/schema" xmlns:tns="http://jw.nju.edu.cn/schema">
             <xs:include
@@ -28,53 +26,77 @@
     <message name="idNotFindFault">
         <part name="fault" element="tns1:NotFoundFault" />
     </message>
+    <message name="studentIdFault">
+        <part name="fault" element="tns1:NotFoundFault" />
+    </message>
+    <message name="courseIdFault">
+        <part name="fault" element="tns1:NotFoundFault"/>
+    </message>
+    <message name="scoreTypeFault">
+        <part name="fault" element="tns1:InvalidParamFault"/>
+    </message>
+    <message name="scoreUpdateFault">
+        <part name="fault" element="tns1:InvalidParamFault"/>
+    </message>
     <message name="get">
         <part name="parameters" element="tns1:学号" />
     </message>
     <message name="getResponse">
         <part name="parameters" element="tns1:课程成绩列表" />
     </message>
+    <message name="add">
+        <part name="parameters" element="tns1:课程成绩列表" />
+    </message>
+    <message name="addResponse">
+        <part name="parameters" element="tns1:课程成绩列表" />
+    </message>
+    <message name="modify">
+        <part name="parameters" element="tns1:课程成绩列表"/>
+    </message>
+    <message name="modifyResponse">
+        <part name="parameters" element="tns1:课程成绩列表"/>
+    </message>
+    <message name="delete">
+        <part name="parameters" element="tns1:课程成绩列表" />
+    </message>
+    <message name="deleteResponse">
+        <part name="parameters" element="tns1:课程成绩列表" />
+    </message>
 
     <portType name="stuScoreInterface">
 
         <operation name="get">
-
             <input message="tns:get" wsam:Action="score/getScoreRequest"/>
             <output message="tns:getResponse" wsam:Action="score/getScoreResponse"/>
             <fault name="IdNotFoundException" message="tns:idNotFindFault" wsam:Action="score/getScore/Fault/IdNotFoundException"/>
         </operation>
 
-        <!--<operation name="add">-->
+        <operation name="add">
+            <input message="tns:add" wsam:Action="score/addScoreRequest" />
+            <output message="tns:addResponse" wsam:Action="score/addScoreResponse" />
+            <fault name="StudentIdFault" message="tns:studentIdFault" wsam:Action="score/addScore/Fault/StudentIdFaultException"/>
+            <fault name="CourseNotFound" message="tns:courseIdFault" wsam:Action="score/addScore/Fault/CourseNotFoundException" />
+            <fault name="ScoreTypeFault" message="tns:scoreTypeFault" wsam:Action="score/addScore/Fault/ScoreTypeFaultException" />
+            <fault name="ScoreUpdateFault" message="tns:scoreUpdateFault" wsam:Action="score/addScore/Fault/ScoreUpdateFaultException" />
+        </operation>
 
-            <!--<input messageLabel="In" element="tns:课程成绩列表" />-->
-            <!--<output messageLabel="Out" element="tns:课程成绩列表" />-->
-            <!--<outfault ref="fault:studentIdFault" messageLabel="Out" />-->
-            <!--<outfault ref="fault:courseIdFault" messageLabel="Out" />-->
-            <!--<outfault ref="fault:scoreTypeFault" messageLabel="Out" />-->
-            <!--<outfault ref="fault:scoreUpdateFault" messageLabel="Out" />-->
-        <!--</operation>-->
+        <operation name="modify">
+            <input message="tns:modify" wsam:Action="score/modifyScoreRequest" />
+            <output message="tns:modifyResponse" wsam:Action="score/modifyScoreResponse" />
+            <fault name="StudentIdFault" message="tns:studentIdFault" wsam:Action="score/addScore/Fault/StudentIdFaultException"/>
+            <fault name="CourseNotFound" message="tns:courseIdFault" wsam:Action="score/addScore/Fault/CourseNotFoundException" />
+            <fault name="ScoreTypeFault" message="tns:scoreTypeFault" wsam:Action="score/addScore/Fault/ScoreTypeFaultException" />
+            <fault name="ScoreUpdateFault" message="tns:scoreUpdateFault" wsam:Action="score/addScore/Fault/ScoreUpdateFaultException" />
+        </operation>
 
-        <!--<operation name="modify">-->
-
-            <!--<input messageLabel="In" element="tns:课程成绩列表" />-->
-            <!--<output messageLabel="Out" element="tns:课程成绩列表" />-->
-            <!--&lt;!&ndash;<outfault ref="fault:studentIdFault" messageLabel="Out" />&ndash;&gt;-->
-            <!--&lt;!&ndash;<outfault ref="fault:courseIdFault" messageLabel="Out" />&ndash;&gt;-->
-            <!--&lt;!&ndash;<outfault ref="fault:scoreTypeFault" messageLabel="Out" />&ndash;&gt;-->
-            <!--&lt;!&ndash;<outfault ref="fault:scoreUpdateFault" messageLabel="Out" />&ndash;&gt;-->
-        <!--</operation>-->
-
-        <!--<operation name="delete"-->
-                   <!--pattern="http://www.w3.org/ns/wsdl/in-out"-->
-                   <!--wsdlx:safe="false">-->
-
-            <!--<input messageLabel="In" element="tns:课程成绩列表" />-->
-            <!--<output messageLabel="Out" element="tns:课程成绩列表" />-->
-            <!--<outfault ref="fault:studentIdFault" messageLabel="Out" />-->
-            <!--<outfault ref="fault:courseIdFault" messageLabel="Out" />-->
-            <!--<outfault ref="fault:scoreTypeFault" messageLabel="Out" />-->
-            <!--<outfault ref="fault:scoreUpdateFault" messageLabel="Out" />-->
-        <!--</operation>-->
+        <operation name="delete">
+            <input message="tns:delete" wsam:Action="score/deleteScoreRequest" />
+            <output message="tns:deleteResponse" wsam:Action="score/deleteScoreResponse" />
+            <fault name="StudentIdFault" message="tns:studentIdFault" wsam:Action="score/addScore/Fault/StudentIdFaultException"/>
+            <fault name="CourseNotFound" message="tns:courseIdFault" wsam:Action="score/addScore/Fault/CourseNotFoundException" />
+            <fault name="ScoreTypeFault" message="tns:scoreTypeFault" wsam:Action="score/addScore/Fault/ScoreTypeFaultException" />
+            <fault name="ScoreUpdateFault" message="tns:scoreUpdateFault" wsam:Action="score/addScore/Fault/ScoreUpdateFaultException" />
+        </operation>
 
     </portType>
 
@@ -86,7 +108,6 @@
             <input>
                 <soap:body use="literal" />
             </input>
-
             <output>
                 <soap:body use="literal" />
             </output>
@@ -95,20 +116,75 @@
                 <soap:fault name="IdNotFoundException" use="literal" />
             </fault>
         </operation>
-        <!--<operation ref="tns:get"-->
-                   <!--wsoap:mep="http://www.w3.org/2003/05/soap/mep/soap-response" />-->
-        <!--<operation ref="tns:add"-->
-                   <!--wsoap:mep="http://www.w3.org/2003/05/soap/mep/request-response" />-->
-        <!--<operation ref="tns:modify"-->
-                   <!--wsoap:mep="http://www.w3.org/2003/05/soap/mep/request-response" />-->
-        <!--<operation ref="tns:delete"-->
-                   <!--wsoap:mep="http://www.w3.org/2003/05/soap/mep/request-response" />-->
 
-        <!--<fault ref="fault:idNotFindFault" wsoap:code="soap:Sender" />-->
-        <!--<fault ref="fault:scoreTypeFault" wsoap:code="soap:Sender" />-->
-        <!--<fault ref="fault:scoreModifyFault" wsoap:code="soap:Sender" />-->
-        <!--<fault ref="fault:studentIdFault" wsoap:code="soap:Sender" />-->
-        <!--<fault ref="fault:courseIdFault" wsoap:code="soap:Sender" />-->
+        <operation name="add">
+            <soap:operation soapAction="score/addScore"/>
+            <input>
+                <soap:body use="literal" />
+            </input>
+            <output>
+                <soap:body use="literal" />
+            </output>
+            <fault name="StudentIdFault">
+                <soap:fault name="StudentIdFault" use="literal" />
+            </fault>
+            <fault name="ScoreTypeFault">
+                <soap:fault name="ScoreTypeFault" use="literal" />
+            </fault>
+            <fault name="CourseNotFound">
+                <soap:fault name="CourseNotFound" use="literal" />
+            </fault>
+
+            <fault name="ScoreUpdateFault">
+                <soap:fault name="ScoreUpdateFault" use="literal" />
+            </fault>
+        </operation>
+
+        <operation name="modify">
+            <soap:operation soapAction="score/modifyScore"/>
+            <input>
+                <soap:body use="literal" />
+            </input>
+            <output>
+                <soap:body use="literal" />
+            </output>
+            <fault name="StudentIdFault">
+                <soap:fault name="StudentIdFault" use="literal" />
+            </fault>
+            <fault name="ScoreTypeFault">
+                <soap:fault name="ScoreTypeFault" use="literal" />
+            </fault>
+            <fault name="CourseNotFound">
+                <soap:fault name="CourseNotFound" use="literal" />
+            </fault>
+
+            <fault name="ScoreUpdateFault">
+                <soap:fault name="ScoreUpdateFault" use="literal" />
+            </fault>
+        </operation>
+
+        <operation name="delete">
+            <soap:operation soapAction="score/deleteScore"/>
+            <input>
+                <soap:body use="literal" />
+            </input>
+            <output>
+                <soap:body use="literal" />
+            </output>
+            <fault name="StudentIdFault">
+                <soap:fault name="StudentIdFault" use="literal" />
+            </fault>
+            <fault name="ScoreTypeFault">
+                <soap:fault name="ScoreTypeFault" use="literal" />
+            </fault>
+            <fault name="CourseNotFound">
+                <soap:fault name="CourseNotFound" use="literal" />
+            </fault>
+
+            <fault name="ScoreUpdateFault">
+                <soap:fault name="ScoreUpdateFault" use="literal" />
+            </fault>
+        </operation>
     </binding>
 
     <service name="stuScoreService">
