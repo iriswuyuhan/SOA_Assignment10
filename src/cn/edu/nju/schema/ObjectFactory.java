@@ -10,12 +10,12 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the cn.edu.nju.schema package. 
+ * generated in the cn.edu.nju.model package.
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
- * content can consist of schema derived interfaces 
- * and classes representing the binding of schema 
+ * content can consist of model derived interfaces
+ * and classes representing the binding of model
  * type definitions, element declarations and model 
  * groups.  Factory methods for each of these are 
  * provided in this class.
@@ -24,11 +24,11 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _部门信息_QNAME = new QName("http://www.nju.edu.cn/schema", "\u90e8\u95e8\u4fe1\u606f");
-    private final static QName _人员信息_QNAME = new QName("http://www.nju.edu.cn/schema", "\u4eba\u5458\u4fe1\u606f");
+    private final static QName _部门信息_QNAME = new QName("http://www.nju.edu.cn/model", "\u90e8\u95e8\u4fe1\u606f");
+    private final static QName _人员信息_QNAME = new QName("http://www.nju.edu.cn/model", "\u4eba\u5458\u4fe1\u606f");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: cn.edu.nju.schema
+     * Create a new ObjectFactory that can be used to create new instances of model derived classes for package: cn.edu.nju.model
      * 
      */
     public ObjectFactory() {
@@ -54,7 +54,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link 部门信息类型 }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.nju.edu.cn/schema", name = "\u90e8\u95e8\u4fe1\u606f")
+    @XmlElementDecl(namespace = "http://www.nju.edu.cn/model", name = "\u90e8\u95e8\u4fe1\u606f")
     public JAXBElement<部门信息类型> create部门信息(部门信息类型 value) {
         return new JAXBElement<部门信息类型>(_部门信息_QNAME, 部门信息类型.class, null, value);
     }
@@ -63,7 +63,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link 人员信息类型 }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.nju.edu.cn/schema", name = "\u4eba\u5458\u4fe1\u606f")
+    @XmlElementDecl(namespace = "http://www.nju.edu.cn/model", name = "\u4eba\u5458\u4fe1\u606f")
     public JAXBElement<人员信息类型> create人员信息(人员信息类型 value) {
         return new JAXBElement<人员信息类型>(_人员信息_QNAME, 人员信息类型.class, null, value);
     }
