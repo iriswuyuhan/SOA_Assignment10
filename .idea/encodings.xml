@@ -13,34 +13,8 @@
     <file url="file://$PROJECT_DIR$/data/田原.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data/辛志庭" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/data/陈进" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/CourseInfo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/CourseScore.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/CourseScoreList.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/CourseTimeAndAddress.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/CourseType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/DepartmentInfo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/DepartmentStu.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/Duty.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/GradeType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/Namespace.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/NotFoundReasonType.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/ObjectFactory.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/PersonInfo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/SchoolCampusType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/ScoreAttributeType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/ScoreDetailType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/ScoreType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/Semester.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/Sex.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/StudentBasicInformation.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/StudentGrade.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/StudentInfo.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/StudentList.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/StudentScore.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/StudentStatusType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/TeacherInfoType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/TitleType.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/soa/model/package-info.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/jw/schema/NotFoundReasonType.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cn/edu/nju/jw/schema/课程成绩列表类型.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
