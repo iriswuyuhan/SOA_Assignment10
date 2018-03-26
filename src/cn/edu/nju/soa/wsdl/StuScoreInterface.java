@@ -15,37 +15,37 @@ import javax.xml.ws.FaultAction;
  * Generated source version: 3.2.3
  *
  */
-@WebService(targetNamespace = "http://soa.nju.edu.cn/wsdl", name = "stuScoreInterface")
-@XmlSeeAlso({cn.edu.nju.schema.ObjectFactory.class, cn.edu.nju.soa.model.ObjectFactory.class})
+@WebService(targetNamespace = "http://jw.nju.edu.cn/wsdl", name = "stuScoreInterface")
+@XmlSeeAlso({cn.edu.nju.schema.ObjectFactory.class, cn.edu.nju.jw.schema.ObjectFactory.class})
 @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
 public interface StuScoreInterface {
 
     @WebMethod(action = "score/modifyScore")
     @Action(input = "score/modifyScoreRequest", output = "score/modifyScoreResponse", fault = {@FaultAction(className = CourseIdFault.class, value = "score/addScore/Fault/CourseNotFoundException"), @FaultAction(className = StudentIdFault.class, value = "score/addScore/Fault/StudentIdFaultException"), @FaultAction(className = ScoreUpdateFault.class, value = "score/addScore/Fault/ScoreUpdateFaultException"), @FaultAction(className = ScoreTypeFault.class, value = "score/addScore/Fault/ScoreTypeFaultException")})
     public void modify(
-        @WebParam(partName = "parameters", mode = WebParam.Mode.INOUT, name = "课程成绩列表", targetNamespace = "http://soa.nju.edu.cn/model")
-        javax.xml.ws.Holder<cn.edu.nju.soa.model.CourseScoreList> parameters
+            @WebParam(partName = "parameters", mode = WebParam.Mode.INOUT, name = "课程成绩列表", targetNamespace = "http://jw.nju.edu.cn/schema")
+                    javax.xml.ws.Holder<cn.edu.nju.jw.schema.课程成绩列表类型> parameters
     ) throws CourseIdFault, StudentIdFault, ScoreUpdateFault, ScoreTypeFault;
 
     @WebMethod(action = "score/addScore")
     @Action(input = "score/addScoreRequest", output = "score/addScoreResponse", fault = {@FaultAction(className = CourseIdFault.class, value = "score/addScore/Fault/CourseNotFoundException"), @FaultAction(className = StudentIdFault.class, value = "score/addScore/Fault/StudentIdFaultException"), @FaultAction(className = ScoreUpdateFault.class, value = "score/addScore/Fault/ScoreUpdateFaultException"), @FaultAction(className = ScoreTypeFault.class, value = "score/addScore/Fault/ScoreTypeFaultException")})
     public void add(
-        @WebParam(partName = "parameters", mode = WebParam.Mode.INOUT, name = "课程成绩列表", targetNamespace = "http://soa.nju.edu.cn/model")
-        javax.xml.ws.Holder<cn.edu.nju.soa.model.CourseScoreList> parameters
+            @WebParam(partName = "parameters", mode = WebParam.Mode.INOUT, name = "课程成绩列表", targetNamespace = "http://jw.nju.edu.cn/schema")
+                    javax.xml.ws.Holder<cn.edu.nju.jw.schema.课程成绩列表类型> parameters
     ) throws CourseIdFault, StudentIdFault, ScoreUpdateFault, ScoreTypeFault;
 
     @WebMethod(action = "score/getScore")
     @Action(input = "score/getScoreRequest", output = "score/getScoreResponse", fault = {@FaultAction(className = IdNotFindFault.class, value = "score/getScore/Fault/IdNotFoundException")})
-    @WebResult(name = "课程成绩列表", targetNamespace = "http://soa.nju.edu.cn/model", partName = "parameters")
-    public cn.edu.nju.soa.model.CourseScoreList get(
-        @WebParam(partName = "parameters", name = "学号", targetNamespace = "http://soa.nju.edu.cn/model")
-        java.lang.String parameters
+    @WebResult(name = "课程成绩列表", targetNamespace = "http://jw.nju.edu.cn/schema", partName = "parameters")
+    public cn.edu.nju.jw.schema.课程成绩列表类型 get(
+            @WebParam(partName = "parameters", name = "学号", targetNamespace = "http://jw.nju.edu.cn/schema")
+                    String parameters
     ) throws IdNotFindFault;
 
     @WebMethod(action = "score/deleteScore")
     @Action(input = "score/deleteScoreRequest", output = "score/deleteScoreResponse", fault = {@FaultAction(className = CourseIdFault.class, value = "score/addScore/Fault/CourseNotFoundException"), @FaultAction(className = StudentIdFault.class, value = "score/addScore/Fault/StudentIdFaultException"), @FaultAction(className = ScoreUpdateFault.class, value = "score/addScore/Fault/ScoreUpdateFaultException"), @FaultAction(className = ScoreTypeFault.class, value = "score/addScore/Fault/ScoreTypeFaultException")})
     public void delete(
-        @WebParam(partName = "parameters", mode = WebParam.Mode.INOUT, name = "课程成绩列表", targetNamespace = "http://soa.nju.edu.cn/model")
-        javax.xml.ws.Holder<cn.edu.nju.soa.model.CourseScoreList> parameters
+            @WebParam(partName = "parameters", mode = WebParam.Mode.INOUT, name = "课程成绩列表", targetNamespace = "http://jw.nju.edu.cn/schema")
+                    javax.xml.ws.Holder<cn.edu.nju.jw.schema.课程成绩列表类型> parameters
     ) throws CourseIdFault, StudentIdFault, ScoreUpdateFault, ScoreTypeFault;
 }

@@ -10,10 +10,10 @@ import javax.xml.ws.WebFault;
  * Generated source version: 3.2.3
  */
 
-@WebFault(name = "InvalidParamFault", targetNamespace = "http://soa.nju.edu.cn/model")
+@WebFault(name = "InvalidParamFault", targetNamespace = "http://jw.nju.edu.cn/schema")
 public class ScoreUpdateFault extends Exception {
 
-    private cn.edu.nju.soa.model.ParamFaultType invalidParamFault;
+    private cn.edu.nju.jw.schema.ParamFaultType invalidParamFault;
 
     public ScoreUpdateFault() {
         super();
@@ -23,21 +23,21 @@ public class ScoreUpdateFault extends Exception {
         super(message);
     }
 
-    public ScoreUpdateFault(String message, java.lang.Throwable cause) {
+    public ScoreUpdateFault(String message, Throwable cause) {
         super(message, cause);
     }
 
-    public ScoreUpdateFault(String message, cn.edu.nju.soa.model.ParamFaultType invalidParamFault) {
+    public ScoreUpdateFault(String message, cn.edu.nju.jw.schema.ParamFaultType invalidParamFault) {
         super(message);
         this.invalidParamFault = invalidParamFault;
     }
 
-    public ScoreUpdateFault(String message, cn.edu.nju.soa.model.ParamFaultType invalidParamFault, java.lang.Throwable cause) {
+    public ScoreUpdateFault(String message, cn.edu.nju.jw.schema.ParamFaultType invalidParamFault, Throwable cause) {
         super(message, cause);
         this.invalidParamFault = invalidParamFault;
     }
 
-    public cn.edu.nju.soa.model.ParamFaultType getFaultInfo() {
+    public cn.edu.nju.jw.schema.ParamFaultType getFaultInfo() {
         return this.invalidParamFault;
     }
 }
