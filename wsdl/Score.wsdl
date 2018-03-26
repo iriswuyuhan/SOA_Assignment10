@@ -2,7 +2,6 @@
 <definitions
         targetNamespace="http://jw.nju.edu.cn/wsdl"
         xmlns:tns="http://jw.nju.edu.cn/wsdl"
-        xmlns:nju="http://www.nju.edu.cn/schema"
         xmlns:tns1="http://jw.nju.edu.cn/schema"
         xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
         xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata"
