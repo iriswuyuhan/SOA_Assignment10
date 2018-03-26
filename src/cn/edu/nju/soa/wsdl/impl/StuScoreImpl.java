@@ -27,4 +27,5 @@ public class StuScoreImpl implements StuScoreInterface {
     public void delete(Holder<CourseScoreList> parameters) throws CourseIdFault, StudentIdFault, ScoreUpdateFault, ScoreTypeFault {
 
     }
+
 }
